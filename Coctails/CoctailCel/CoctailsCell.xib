@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="-171" id="KGk-i7-Jjw" customClass="CoctailsCell" customModule="CocktailsAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JrQ-X9-fov">
+                        <rect key="frame" x="20" y="30" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="VRe-q6-Am0"/>
+                            <constraint firstAttribute="width" constant="80" id="uAX-cs-WkV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coctails Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EX-Dc-qpm">
+                        <rect key="frame" x="120" y="35" width="133" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcoholic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4m-fj-uxT">
+                        <rect key="frame" x="120" y="68" width="69.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDV-m0-2gw">
+                        <rect key="frame" x="339" y="41" width="55" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="J1f-PJ-lov"/>
+                            <constraint firstAttribute="height" constant="60" id="mVf-QV-nf2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Learn Mote">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="learnMoreButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Osn-Kd-oAh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="WDV-m0-2gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="0Na-UN-rzy"/>
+                    <constraint firstItem="JrQ-X9-fov" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="68C-hl-Pz9"/>
+                    <constraint firstItem="O4m-fj-uxT" firstAttribute="leading" secondItem="JrQ-X9-fov" secondAttribute="trailing" constant="20" id="C2B-cI-jWP"/>
+                    <constraint firstAttribute="bottom" secondItem="3EX-Dc-qpm" secondAttribute="bottom" constant="79.5" id="LtD-AT-haB"/>
+                    <constraint firstItem="O4m-fj-uxT" firstAttribute="top" secondItem="3EX-Dc-qpm" secondAttribute="bottom" constant="7.5" id="O4M-3s-2Od"/>
+                    <constraint firstItem="WDV-m0-2gw" firstAttribute="leading" secondItem="JrQ-X9-fov" secondAttribute="trailing" constant="239" id="PRt-A5-NoL"/>
+                    <constraint firstItem="3EX-Dc-qpm" firstAttribute="leading" secondItem="JrQ-X9-fov" secondAttribute="trailing" constant="20" id="VaB-Nh-yOv"/>
+                    <constraint firstItem="3EX-Dc-qpm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="euu-P2-5u4"/>
+                    <constraint firstItem="3EX-Dc-qpm" firstAttribute="leading" secondItem="JrQ-X9-fov" secondAttribute="trailing" constant="20" id="gHE-ip-HrV"/>
+                    <constraint firstItem="JrQ-X9-fov" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="h7J-15-jkP"/>
+                    <constraint firstAttribute="bottom" secondItem="JrQ-X9-fov" secondAttribute="bottom" constant="30" id="v1y-H1-NEv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coctailImage" destination="JrQ-X9-fov" id="MgV-Xs-BMd"/>
+                <outlet property="coctailNameLabel" destination="3EX-Dc-qpm" id="91d-rS-V9j"/>
+                <outlet property="labelAlcoholicOrNo" destination="O4m-fj-uxT" id="pdq-sI-1vp"/>
+                <outlet property="learnMoreButton" destination="WDV-m0-2gw" id="BSb-bK-moL"/>
+            </connections>
+            <point key="canvasLocation" x="-73.913043478260875" y="-4.6875"/>
+        </tableViewCell>
+    </objects>
+</document>

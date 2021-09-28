@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		594427112703AE920071DCB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427102703AE920071DCB7 /* AppDelegate.swift */; };
+		594427132703AE920071DCB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427122703AE920071DCB7 /* SceneDelegate.swift */; };
+		594427182703AE920071DCB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594427162703AE920071DCB7 /* Main.storyboard */; };
+		5944271B2703AE920071DCB7 /* Coctails.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 594427192703AE920071DCB7 /* Coctails.xcdatamodeld */; };
+		5944271D2703AE930071DCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5944271C2703AE930071DCB7 /* Assets.xcassets */; };
+		594427202703AE930071DCB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5944271E2703AE930071DCB7 /* LaunchScreen.storyboard */; };
+		594427342703AF4D0071DCB7 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427322703AF4D0071DCB7 /* Drinks.swift */; };
+		594427352703AF4D0071DCB7 /* All_Coctails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427332703AF4D0071DCB7 /* All_Coctails.swift */; };
+		5944273A2703AF5A0071DCB7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427372703AF5A0071DCB7 /* NetworkService.swift */; };
+		5944273B2703AF5A0071DCB7 /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427382703AF5A0071DCB7 /* DataFetcherService.swift */; };
+		5944273C2703AF5A0071DCB7 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427392703AF5A0071DCB7 /* NetworkDataFetcher.swift */; };
+		5944273F2703AF640071DCB7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944273E2703AF640071DCB7 /* SecondViewController.swift */; };
+		594427432703AF760071DCB7 /* OneCoctailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427412703AF750071DCB7 /* OneCoctailViewController.swift */; };
+		594427442703AF760071DCB7 /* OneCoctailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594427422703AF760071DCB7 /* OneCoctailViewController.xib */; };
+		594427482703AF820071DCB7 /* CoctailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594427462703AF820071DCB7 /* CoctailsCell.xib */; };
+		594427492703AF820071DCB7 /* CoctailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427472703AF820071DCB7 /* CoctailsCell.swift */; };
+		5944274C2703AF8C0071DCB7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944274B2703AF8C0071DCB7 /* SplashViewController.swift */; };
+		5944274F2703AF940071DCB7 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944274E2703AF940071DCB7 /* TabViewController.swift */; };
+		594427532703AFB20071DCB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427522703AFB20071DCB7 /* ViewController.swift */; };
+		CE0A47DA9B5E9DD2A4F7EA89 /* Pods_Coctails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FE5E06E36B0020C4F3D183 /* Pods_Coctails.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09735C5FD9E6A999128484EE /* Pods-Coctails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctails.debug.xcconfig"; path = "Target Support Files/Pods-Coctails/Pods-Coctails.debug.xcconfig"; sourceTree = "<group>"; };
+		5944270D2703AE920071DCB7 /* Coctails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coctails.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		594427102703AE920071DCB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		594427122703AE920071DCB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		594427172703AE920071DCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5944271A2703AE920071DCB7 /* Coctails.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coctails.xcdatamodel; sourceTree = "<group>"; };
+		5944271C2703AE930071DCB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5944271F2703AE930071DCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		594427212703AE930071DCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		594427322703AF4D0071DCB7 /* Drinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		594427332703AF4D0071DCB7 /* All_Coctails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Coctails.swift; sourceTree = "<group>"; };
+		594427372703AF5A0071DCB7 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		594427382703AF5A0071DCB7 /* DataFetcherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		594427392703AF5A0071DCB7 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		5944273E2703AF640071DCB7 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		594427412703AF750071DCB7 /* OneCoctailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneCoctailViewController.swift; sourceTree = "<group>"; };
+		594427422703AF760071DCB7 /* OneCoctailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCoctailViewController.xib; sourceTree = "<group>"; };
+		594427462703AF820071DCB7 /* CoctailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoctailsCell.xib; sourceTree = "<group>"; };
+		594427472703AF820071DCB7 /* CoctailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoctailsCell.swift; sourceTree = "<group>"; };
+		5944274B2703AF8C0071DCB7 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5944274E2703AF940071DCB7 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		594427522703AFB20071DCB7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		706B095056A3DFC8ACCB12D6 /* Pods-Coctails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctails.release.xcconfig"; path = "Target Support Files/Pods-Coctails/Pods-Coctails.release.xcconfig"; sourceTree = "<group>"; };
+		D0FE5E06E36B0020C4F3D183 /* Pods_Coctails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coctails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5944270A2703AE920071DCB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0A47DA9B5E9DD2A4F7EA89 /* Pods_Coctails.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		594427042703AE920071DCB7 = {
+			isa = PBXGroup;
+			children = (
+				5944270F2703AE920071DCB7 /* Coctails */,
+				5944270E2703AE920071DCB7 /* Products */,
+				A5ED491C7139AE711783AD8F /* Pods */,
+				9625BDF05DB37430AD01E3B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5944270E2703AE920071DCB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5944270D2703AE920071DCB7 /* Coctails.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5944270F2703AE920071DCB7 /* Coctails */ = {
+			isa = PBXGroup;
+			children = (
+				594427302703AF0E0071DCB7 /* TableViewController */,
+				5944272F2703AF000071DCB7 /* SplashViewController */,
+				5944272E2703AEF30071DCB7 /* CoctailCel */,
+				5944272D2703AEDE0071DCB7 /* OneCoctailPhoto */,
+				5944272C2703AED10071DCB7 /* SecondViewController */,
+				5944272B2703AEC50071DCB7 /* Networking */,
+				5944272A2703AEBE0071DCB7 /* MainModel */,
+				594427282703AEAA0071DCB7 /* SuportFiles */,
+				594427162703AE920071DCB7 /* Main.storyboard */,
+				594427522703AFB20071DCB7 /* ViewController.swift */,
+				594427212703AE930071DCB7 /* Info.plist */,
+				594427192703AE920071DCB7 /* Coctails.xcdatamodeld */,
+			);
+			path = Coctails;
+			sourceTree = "<group>";
+		};
+		594427282703AEAA0071DCB7 /* SuportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				594427102703AE920071DCB7 /* AppDelegate.swift */,
+				594427122703AE920071DCB7 /* SceneDelegate.swift */,
+				5944271C2703AE930071DCB7 /* Assets.xcassets */,
+				5944271E2703AE930071DCB7 /* LaunchScreen.storyboard */,
+			);
+			path = SuportFiles;
+			sourceTree = "<group>";
+		};
+		5944272A2703AEBE0071DCB7 /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+				594427332703AF4D0071DCB7 /* All_Coctails.swift */,
+				594427322703AF4D0071DCB7 /* Drinks.swift */,
+			);
+			path = MainModel;
+			sourceTree = "<group>";
+		};
+		5944272B2703AEC50071DCB7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				594427382703AF5A0071DCB7 /* DataFetcherService.swift */,
+				594427392703AF5A0071DCB7 /* NetworkDataFetcher.swift */,
+				594427372703AF5A0071DCB7 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5944272C2703AED10071DCB7 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5944273E2703AF640071DCB7 /* SecondViewController.swift */,
+			);
+			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		5944272D2703AEDE0071DCB7 /* OneCoctailPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				594427412703AF750071DCB7 /* OneCoctailViewController.swift */,
+				594427422703AF760071DCB7 /* OneCoctailViewController.xib */,
+			);
+			path = OneCoctailPhoto;
+			sourceTree = "<group>";
+		};
+		5944272E2703AEF30071DCB7 /* CoctailCel */ = {
+			isa = PBXGroup;
+			children = (
+				594427472703AF820071DCB7 /* CoctailsCell.swift */,
+				594427462703AF820071DCB7 /* CoctailsCell.xib */,
+			);
+			path = CoctailCel;
+			sourceTree = "<group>";
+		};
+		5944272F2703AF000071DCB7 /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5944274B2703AF8C0071DCB7 /* SplashViewController.swift */,
+			);
+			path = SplashViewController;
+			sourceTree = "<group>";
+		};
+		594427302703AF0E0071DCB7 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5944274E2703AF940071DCB7 /* TabViewController.swift */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		9625BDF05DB37430AD01E3B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE5E06E36B0020C4F3D183 /* Pods_Coctails.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5ED491C7139AE711783AD8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09735C5FD9E6A999128484EE /* Pods-Coctails.debug.xcconfig */,
+				706B095056A3DFC8ACCB12D6 /* Pods-Coctails.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5944270C2703AE920071DCB7 /* Coctails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 594427242703AE930071DCB7 /* Build configuration list for PBXNativeTarget "Coctails" */;
+			buildPhases = (
+				6C324D79E1500CB2CFDE7619 /* [CP] Check Pods Manifest.lock */,
+				594427092703AE920071DCB7 /* Sources */,
+				5944270A2703AE920071DCB7 /* Frameworks */,
+				5944270B2703AE920071DCB7 /* Resources */,
+				101F178AF44CAF9646FCB9AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coctails;
+			productName = Coctails;
+			productReference = 5944270D2703AE920071DCB7 /* Coctails.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		594427052703AE920071DCB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5944270C2703AE920071DCB7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 594427082703AE920071DCB7 /* Build configuration list for PBXProject "Coctails" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 594427042703AE920071DCB7;
+			productRefGroup = 5944270E2703AE920071DCB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5944270C2703AE920071DCB7 /* Coctails */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5944270B2703AE920071DCB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594427202703AE930071DCB7 /* LaunchScreen.storyboard in Resources */,
+				594427442703AF760071DCB7 /* OneCoctailViewController.xib in Resources */,
+				5944271D2703AE930071DCB7 /* Assets.xcassets in Resources */,
+				594427182703AE920071DCB7 /* Main.storyboard in Resources */,
+				594427482703AF820071DCB7 /* CoctailsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		101F178AF44CAF9646FCB9AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coctails/Pods-Coctails-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coctails/Pods-Coctails-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coctails/Pods-Coctails-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C324D79E1500CB2CFDE7619 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coctails-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		594427092703AE920071DCB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594427432703AF760071DCB7 /* OneCoctailViewController.swift in Sources */,
+				594427352703AF4D0071DCB7 /* All_Coctails.swift in Sources */,
+				594427342703AF4D0071DCB7 /* Drinks.swift in Sources */,
+				594427112703AE920071DCB7 /* AppDelegate.swift in Sources */,
+				594427532703AFB20071DCB7 /* ViewController.swift in Sources */,
+				594427132703AE920071DCB7 /* SceneDelegate.swift in Sources */,
+				5944274C2703AF8C0071DCB7 /* SplashViewController.swift in Sources */,
+				5944271B2703AE920071DCB7 /* Coctails.xcdatamodeld in Sources */,
+				594427492703AF820071DCB7 /* CoctailsCell.swift in Sources */,
+				5944273C2703AF5A0071DCB7 /* NetworkDataFetcher.swift in Sources */,
+				5944273A2703AF5A0071DCB7 /* NetworkService.swift in Sources */,
+				5944273F2703AF640071DCB7 /* SecondViewController.swift in Sources */,
+				5944274F2703AF940071DCB7 /* TabViewController.swift in Sources */,
+				5944273B2703AF5A0071DCB7 /* DataFetcherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		594427162703AE920071DCB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				594427172703AE920071DCB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5944271E2703AE930071DCB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5944271F2703AE930071DCB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		594427222703AE930071DCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		594427232703AE930071DCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		594427252703AE930071DCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09735C5FD9E6A999128484EE /* Pods-Coctails.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Coctails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOO.Razrab.Coctails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		594427262703AE930071DCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706B095056A3DFC8ACCB12D6 /* Pods-Coctails.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Coctails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OOO.Razrab.Coctails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		594427082703AE920071DCB7 /* Build configuration list for PBXProject "Coctails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				594427222703AE930071DCB7 /* Debug */,
+				594427232703AE930071DCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		594427242703AE930071DCB7 /* Build configuration list for PBXNativeTarget "Coctails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				594427252703AE930071DCB7 /* Debug */,
+				594427262703AE930071DCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		594427192703AE920071DCB7 /* Coctails.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5944271A2703AE920071DCB7 /* Coctails.xcdatamodel */,
+			);
+			currentVersion = 5944271A2703AE920071DCB7 /* Coctails.xcdatamodel */;
+			path = Coctails.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 594427052703AE920071DCB7 /* Project object */;
+}
