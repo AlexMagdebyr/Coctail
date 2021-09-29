@@ -114,19 +114,37 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gC7-3X-jBA">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xO7-pf-HvC">
+                                <rect key="frame" x="0.0" y="143" width="414" height="753"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your cocktail today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tui-1p-OMp">
+                                <rect key="frame" x="20" y="101" width="248" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hxb-yN-ho8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xO7-pf-HvC" firstAttribute="top" secondItem="Tui-1p-OMp" secondAttribute="bottom" constant="16" id="5BD-dQ-Ifa"/>
+                            <constraint firstItem="xO7-pf-HvC" firstAttribute="top" secondItem="Hxb-yN-ho8" secondAttribute="top" constant="55" id="H6a-Q3-jYV"/>
+                            <constraint firstItem="xO7-pf-HvC" firstAttribute="trailing" secondItem="Hxb-yN-ho8" secondAttribute="trailing" id="IDx-pf-OCx"/>
+                            <constraint firstItem="xO7-pf-HvC" firstAttribute="leading" secondItem="Hxb-yN-ho8" secondAttribute="leading" id="NUw-XC-0qP"/>
+                            <constraint firstItem="Tui-1p-OMp" firstAttribute="leading" secondItem="Hxb-yN-ho8" secondAttribute="leading" constant="20" id="Ypz-h2-Rcn"/>
                             <constraint firstAttribute="bottom" secondItem="gC7-3X-jBA" secondAttribute="bottom" id="fEK-nW-t6x"/>
+                            <constraint firstItem="Tui-1p-OMp" firstAttribute="top" secondItem="Hxb-yN-ho8" secondAttribute="top" constant="13" id="mJJ-RV-rY3"/>
                             <constraint firstItem="gC7-3X-jBA" firstAttribute="top" secondItem="Hxb-yN-ho8" secondAttribute="top" id="q11-zw-Gtl"/>
                             <constraint firstItem="gC7-3X-jBA" firstAttribute="leading" secondItem="Hxb-yN-ho8" secondAttribute="leading" id="sow-PM-46t"/>
+                            <constraint firstAttribute="bottom" secondItem="xO7-pf-HvC" secondAttribute="bottom" id="xug-Ip-4To"/>
                             <constraint firstItem="gC7-3X-jBA" firstAttribute="trailing" secondItem="Hxb-yN-ho8" secondAttribute="trailing" id="y3L-Ae-P63"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Coctails" id="8fC-P8-cbZ"/>
                     <connections>
                         <outlet property="mainImage2VC" destination="gC7-3X-jBA" id="UQT-67-18H"/>
+                        <outlet property="tableView" destination="xO7-pf-HvC" id="3sV-5b-Urr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9i-iF-3QB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

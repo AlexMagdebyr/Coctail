@@ -20,7 +20,7 @@ class DataFetcherService {
 
     func myJson1(completion: @escaping (All_Coctails?) -> Void) {
         
-        let urlCoctails = "http://www.thecocktaildb.com/api/json/v1/1/search.php?i=vodka"
+        let urlCoctails = "www.thecocktaildb.com/api/json/v1/1/random.php"
         let params: [String : String] = ["i" : "vodka"]
 
 

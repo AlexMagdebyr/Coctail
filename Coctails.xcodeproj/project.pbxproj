@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,12 @@
 		5944274C2703AF8C0071DCB7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944274B2703AF8C0071DCB7 /* SplashViewController.swift */; };
 		5944274F2703AF940071DCB7 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944274E2703AF940071DCB7 /* TabViewController.swift */; };
 		594427532703AFB20071DCB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594427522703AFB20071DCB7 /* ViewController.swift */; };
+		59FA966F2703C2DF001612BC /* SecondVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA966D2703C2DF001612BC /* SecondVCTableViewCell.swift */; };
+		59FA96702703C2DF001612BC /* SecondVCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA966E2703C2DF001612BC /* SecondVCTableViewCell.xib */; };
+		59FA96742703C331001612BC /* SecondVC_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA96722703C331001612BC /* SecondVC_CollectionViewCell.swift */; };
+		59FA96752703C331001612BC /* SecondVC_CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA96732703C331001612BC /* SecondVC_CollectionViewCell.xib */; };
+		59FA96812703FC67001612BC /* ReseptCoctailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA967F2703FC67001612BC /* ReseptCoctailViewController.swift */; };
+		59FA96822703FC67001612BC /* ReseptCoctailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA96802703FC67001612BC /* ReseptCoctailViewController.xib */; };
 		CE0A47DA9B5E9DD2A4F7EA89 /* Pods_Coctails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FE5E06E36B0020C4F3D183 /* Pods_Coctails.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +58,12 @@
 		5944274B2703AF8C0071DCB7 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		5944274E2703AF940071DCB7 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		594427522703AFB20071DCB7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59FA966D2703C2DF001612BC /* SecondVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVCTableViewCell.swift; sourceTree = "<group>"; };
+		59FA966E2703C2DF001612BC /* SecondVCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVCTableViewCell.xib; sourceTree = "<group>"; };
+		59FA96722703C331001612BC /* SecondVC_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC_CollectionViewCell.swift; sourceTree = "<group>"; };
+		59FA96732703C331001612BC /* SecondVC_CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVC_CollectionViewCell.xib; sourceTree = "<group>"; };
+		59FA967F2703FC67001612BC /* ReseptCoctailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReseptCoctailViewController.swift; sourceTree = "<group>"; };
+		59FA96802703FC67001612BC /* ReseptCoctailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReseptCoctailViewController.xib; sourceTree = "<group>"; };
 		706B095056A3DFC8ACCB12D6 /* Pods-Coctails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctails.release.xcconfig"; path = "Target Support Files/Pods-Coctails/Pods-Coctails.release.xcconfig"; sourceTree = "<group>"; };
 		D0FE5E06E36B0020C4F3D183 /* Pods_Coctails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coctails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,11 +101,14 @@
 		5944270F2703AE920071DCB7 /* Coctails */ = {
 			isa = PBXGroup;
 			children = (
-				594427302703AF0E0071DCB7 /* TableViewController */,
+				59FA96772703FB65001612BC /* ReseptController */,
+				594427302703AF0E0071DCB7 /* TabViewController */,
 				5944272F2703AF000071DCB7 /* SplashViewController */,
 				5944272E2703AEF30071DCB7 /* CoctailCel */,
 				5944272D2703AEDE0071DCB7 /* OneCoctailPhoto */,
 				5944272C2703AED10071DCB7 /* SecondViewController */,
+				59FA966C2703C27C001612BC /* CollectionViewCellSecondVC */,
+				59FA966B2703C262001612BC /* TableViewCellSecondVC */,
 				5944272B2703AEC50071DCB7 /* Networking */,
 				5944272A2703AEBE0071DCB7 /* MainModel */,
 				594427282703AEAA0071DCB7 /* SuportFiles */,
@@ -169,12 +184,39 @@
 			path = SplashViewController;
 			sourceTree = "<group>";
 		};
-		594427302703AF0E0071DCB7 /* TableViewController */ = {
+		594427302703AF0E0071DCB7 /* TabViewController */ = {
 			isa = PBXGroup;
 			children = (
 				5944274E2703AF940071DCB7 /* TabViewController.swift */,
 			);
-			path = TableViewController;
+			path = TabViewController;
+			sourceTree = "<group>";
+		};
+		59FA966B2703C262001612BC /* TableViewCellSecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				59FA966D2703C2DF001612BC /* SecondVCTableViewCell.swift */,
+				59FA966E2703C2DF001612BC /* SecondVCTableViewCell.xib */,
+			);
+			path = TableViewCellSecondVC;
+			sourceTree = "<group>";
+		};
+		59FA966C2703C27C001612BC /* CollectionViewCellSecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				59FA96722703C331001612BC /* SecondVC_CollectionViewCell.swift */,
+				59FA96732703C331001612BC /* SecondVC_CollectionViewCell.xib */,
+			);
+			path = CollectionViewCellSecondVC;
+			sourceTree = "<group>";
+		};
+		59FA96772703FB65001612BC /* ReseptController */ = {
+			isa = PBXGroup;
+			children = (
+				59FA967F2703FC67001612BC /* ReseptCoctailViewController.swift */,
+				59FA96802703FC67001612BC /* ReseptCoctailViewController.xib */,
+			);
+			path = ReseptController;
 			sourceTree = "<group>";
 		};
 		9625BDF05DB37430AD01E3B9 /* Frameworks */ = {
@@ -191,7 +233,6 @@
 				09735C5FD9E6A999128484EE /* Pods-Coctails.debug.xcconfig */,
 				706B095056A3DFC8ACCB12D6 /* Pods-Coctails.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -254,10 +295,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FA96752703C331001612BC /* SecondVC_CollectionViewCell.xib in Resources */,
+				59FA96822703FC67001612BC /* ReseptCoctailViewController.xib in Resources */,
 				594427202703AE930071DCB7 /* LaunchScreen.storyboard in Resources */,
 				594427442703AF760071DCB7 /* OneCoctailViewController.xib in Resources */,
 				5944271D2703AE930071DCB7 /* Assets.xcassets in Resources */,
 				594427182703AE920071DCB7 /* Main.storyboard in Resources */,
+				59FA96702703C2DF001612BC /* SecondVCTableViewCell.xib in Resources */,
 				594427482703AF820071DCB7 /* CoctailsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,9 +360,12 @@
 				594427342703AF4D0071DCB7 /* Drinks.swift in Sources */,
 				594427112703AE920071DCB7 /* AppDelegate.swift in Sources */,
 				594427532703AFB20071DCB7 /* ViewController.swift in Sources */,
+				59FA96742703C331001612BC /* SecondVC_CollectionViewCell.swift in Sources */,
 				594427132703AE920071DCB7 /* SceneDelegate.swift in Sources */,
+				59FA966F2703C2DF001612BC /* SecondVCTableViewCell.swift in Sources */,
 				5944274C2703AF8C0071DCB7 /* SplashViewController.swift in Sources */,
 				5944271B2703AE920071DCB7 /* Coctails.xcdatamodeld in Sources */,
+				59FA96812703FC67001612BC /* ReseptCoctailViewController.swift in Sources */,
 				594427492703AF820071DCB7 /* CoctailsCell.swift in Sources */,
 				5944273C2703AF5A0071DCB7 /* NetworkDataFetcher.swift in Sources */,
 				5944273A2703AF5A0071DCB7 /* NetworkService.swift in Sources */,

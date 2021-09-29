@@ -88,7 +88,6 @@ class OneCoctailViewController: UIViewController {
     @IBOutlet weak var ingridientsNumber8: UILabel!
     @IBOutlet weak var ingridientsNumber9: UILabel!
     @IBOutlet weak var ingridientsNumber10: UILabel!
-    
     @IBOutlet weak var unitLabel: UILabel!
     @IBOutlet weak var mesure1: UILabel!
     @IBOutlet weak var mesure2: UILabel!
@@ -100,20 +99,17 @@ class OneCoctailViewController: UIViewController {
     @IBOutlet weak var mesure8: UILabel!
     @IBOutlet weak var mesure9: UILabel!
     @IBOutlet weak var mesure10: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         emptyText_BGColor()
-        
     }
-    
     
     func emptyText_BGColor() {
         alcoholImage.sd_setImage(with: URL(string: strDrinkThumb!),
                                  placeholderImage: nil,
                                  options: .refreshCached, context: nil)
         nameAlcohol.text = strDrink
-        
         aboutAlcohol.text = strInstructions
         acoholOrNo.text = strAlcoholic! + (" Coctail")
         acoholOrNo.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
@@ -145,7 +141,6 @@ class OneCoctailViewController: UIViewController {
         mesure8.text = strMeasure8
         mesure9.text = strMeasure9
         mesure10.text = strMeasure10
-        
         
         if ingridientsNumber1.text !=  nil{
             ingridientsNumber1.backgroundColor = #colorLiteral(red: 0.5791940689, green: 0.1280144453, blue: 0.5726861358, alpha: 1)
@@ -257,10 +252,7 @@ class OneCoctailViewController: UIViewController {
             ingridientsNumber10.isHidden = true
             mesure10.isHidden = true
         }
-        
     }
-    
-    
 }
 
 
