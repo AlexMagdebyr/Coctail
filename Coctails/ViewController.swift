@@ -4,8 +4,8 @@ import Alamofire
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var mainImageView: UIImageView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var mainImageView: UIImageView!
+    @IBOutlet private weak var tableView: UITableView!
     private var dataFetcher = DataFetcherService()
     private var modelAlcohol: All_Coctails?
     private var allDrinks: [Drinks] = []

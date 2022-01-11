@@ -103,7 +103,6 @@
 			children = (
 				59FA96772703FB65001612BC /* ReseptController */,
 				594427302703AF0E0071DCB7 /* TabViewController */,
-				5944272F2703AF000071DCB7 /* SplashViewController */,
 				5944272E2703AEF30071DCB7 /* CoctailCel */,
 				5944272D2703AEDE0071DCB7 /* OneCoctailPhoto */,
 				5944272C2703AED10071DCB7 /* SecondViewController */,
@@ -170,6 +169,7 @@
 		5944272E2703AEF30071DCB7 /* CoctailCel */ = {
 			isa = PBXGroup;
 			children = (
+				5944272F2703AF000071DCB7 /* SplashViewController */,
 				594427472703AF820071DCB7 /* CoctailsCell.swift */,
 				594427462703AF820071DCB7 /* CoctailsCell.xib */,
 			);

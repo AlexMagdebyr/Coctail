@@ -17,8 +17,8 @@ struct ModelSecondVC {
 class SecondViewController: UIViewController {
     
     private var dataFetcher = DataFetcherService()
-    @IBOutlet weak var mainImage2VC: UIImageView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var mainImage2VC: UIImageView!
+    @IBOutlet private weak var tableView: UITableView!
     let searchController = UISearchController(searchResultsController: nil)
     var isSearchActive = false
     

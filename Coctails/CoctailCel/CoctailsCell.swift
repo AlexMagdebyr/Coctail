@@ -21,10 +21,10 @@ struct CoctailsCellModel {
 }
 class CoctailsCell: UITableViewCell {
     
-    @IBOutlet weak var learnMoreButton: UIButton!
-    @IBOutlet weak var coctailImage: UIImageView!
-    @IBOutlet weak var coctailNameLabel: UILabel!
-    @IBOutlet weak var labelAlcoholicOrNo: UILabel!
+    @IBOutlet private weak var learnMoreButton: UIButton!
+    @IBOutlet private weak var coctailImage: UIImageView!
+    @IBOutlet private weak var coctailNameLabel: UILabel!
+    @IBOutlet private weak var labelAlcoholicOrNo: UILabel!
     weak var delegate: CoctailsCellDelegate?
     private var index: Int?
     
